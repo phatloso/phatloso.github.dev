@@ -27,17 +27,22 @@ console.log('  * *  ')
 console.log('   *   ')
 // bai 2
 //cau a
-let a = 10;
+//let a = 10
 // cau b
+
 let b = 10;
 console.log(b)
+//let b = '10'
+//console.log(b)
+
 // cau c
-a =20;
-console.log(a)
+//a =20
+//console.log(a)
 // cau d
-const pi=3.14;
-console.log(pi)
+//const pi=3.14
+//console.log(pi)
 // cau e
+
 pi ='5'
 console.log(pi)
 // cau f
@@ -51,5 +56,23 @@ console.log(dienthoai)
 dienthoai.gia='750USD'
 console.log(dienthoai)
 
+
+
+//pi =5
+//console.log(pi)
+// cau f
+var dienthoai={
+    ten: 'iphone 14',
+    hangSanXuat: 'apple',
+    mauSac: 'trang',
+    gia: '1000USD'
+}
+
+//cau g
+dienthoai.gia='750USD'
+console.log(dienthoai)
+// cau h 
+dienthoai.ten='iphone 14 promax'
+console.log(dienthoai)
 
 

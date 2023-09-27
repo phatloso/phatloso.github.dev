@@ -15,7 +15,7 @@ function kiemtrasoamduong(n){
 kiemtrasoamduong(5)
 //b
 function kiemtrasochanle(n){
-    if(n/2==0){
+    if(n%2==0){
         console.log("n la so chan")
     }
     else{
@@ -37,3 +37,14 @@ function kiemtrasolonnhat(a,b,c){
     }
 }
 kiemtrasolonnhat(3,4,8)
+//d
+function kiemtranamnhuan(a){
+    if(a%4==0 && a%100 !=0){
+        console.log("nam nay la nam nhuan")
+    }
+    else{
+        console.log("nam nay khong phai nam nhuan")
+    }
+}
+kiemtranamnhuan(2023)
+//e

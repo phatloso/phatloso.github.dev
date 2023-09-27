@@ -30,11 +30,24 @@ let dientich=3.14*(duongkinh/2)*duongkinh
 console.log(chuvi)
 console.log(dientich)
 //cau e
-let dai=15,rong=10
-let cv=(dai+rong)*2
-let dt=dai*rong
-console.log(cv)
-console.log(dt)
+//let dai=15,rong=10
+//let cv=(dai+rong)*2
+//let dt=dai*rong
+//console.log(cv)
+//console.log(dt)
+
+function chuvi (chieudai,chieurong){
+    let chu_vi =(chieudai+chieurong)*2
+    return chu_vi
+}
+function dientich(chieudai,chieurong){
+    let dien_tich =chieudai*chieurong
+    return dien_tich
+}
+const kq1=chuvi(15,10)
+console.log('chu vi :', ketqua1)
+const kq2=dientich(15,10)
+console.log("dien tich :", kq2)
 //cau f
 let s=120,t=2.10
 let v=s/t

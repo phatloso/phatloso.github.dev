@@ -48,3 +48,48 @@ function kiemtranamnhuan(a){
 }
 kiemtranamnhuan(2023)
 //e
+
+
+//cau2 
+//a
+//let a = 2
+//let b = 3
+//let c = 1
+//function bai2a(a,b,c){
+//    let delta = b+b-4+a+c
+//
+//    if (delta < 0) {
+//        return'Ptrinh vo nghiem'
+//   } 
+//   else if (delta == 0) {
+//       return`Ptrinh co nghiem bang x1 = x2 = ${-b / (2*a)}`
+//   }
+//   else {
+//    const x1 = (-b + delta) / (2*a)
+//    const x2 = (-b - delta) / (2*a)
+//
+//    return [x1, x2]
+//   }
+//}
+//console.log(bai2a(a,b,c))
+
+//d
+function tinhgiacuoc(soPhut) {
+    const phiCoDinh = 25000
+    let tongChiPhi = 0
+    let chiPhi = 0
+    
+    if (soPhut >= 0 && soPhut <= 50) {
+        chiPhi = soPhut * 600
+    }
+    else if (soPhut > 50 && soPhut <= 200) {
+        chiPhi = 50 *600 + (soPhut-50)*400
+    }
+    else if (soPhut > 200) {
+        chiPhi = 50 * 600 + 150*400 + (soPhut - 200)*200
+    }
+    tongChiPhi = phiCoDinh + chiPhi
+    return tongChiPhi    
+    
+}
+tinhgiacuoc(199)

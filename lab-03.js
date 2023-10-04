@@ -38,4 +38,56 @@ for(let i = doDaiMang - 1; i >= 0 ; i = i - 1) {
 }
 console.log(arr1)
 //f tim so lan xuat hien cua moi phan tu trong mang
+const tansuatXuatHien = {};
 
+for(let i = 0; i < doDaiMang; i++) {
+   const phanTuThuI = arr[i];
+   tansuatXuatHien[phanTuThuI] = (tansuatXuatHien[phanTuThuI] || 0) + 1;
+}
+
+console.log('=>>>>', tansuatXuatHien)
+//g Chèn phần tử 117 vào đầu mảng
+for(let i = doDaiMang - 1; i >= 0; i--) {
+   arr[i+1] = arr[i]
+}
+arr[0]=117
+console.log(arr)
+//h Kiểm tra xem mảng có phải là mỗi dãy số tăng dần hay không
+const doDaiMangMoi = arr.length
+let checkTangDan = true
+for(let i = 0; i <doDaiMangMoi; i++) {
+   if(arr[i] > arr[i + 1]) {
+       checkTangDan =false
+       break
+   }
+}
+if(checkTangDan=== true) {
+   console.log('mang tang dan')
+}
+else {
+   console.log('mang kh tang dan')
+}
+// i Sắp xếp mảng theo thứ tự tăng dần
+
+for(let i = 0; i < doDaiMangMoi ; i++) {
+   for(let j = i + 1; j < doDaiMangMoi; j++) {
+      if(arr[i] > arr[j]) {
+         let tam = arr[i]
+         arr[i] = arr[j]
+         arr[j] = tam
+      }
+   }
+}
+console.log(arr)
+// j Sắp xếp mảng theo thứ tự giảm dần
+for(let i = 0; i < doDaiMangMoi ; i++) {
+   for(let j = i + 1; j < doDaiMangMoi; j++) {
+      if(arr[i] < arr[j]) {
+         let tam = arr[i]
+         arr[i] = arr[j]
+         arr[j] = tam
+      }
+   }
+}
+console.log(arr)
+//k Liệt kê danh sách các số chẵn trong mảng trên

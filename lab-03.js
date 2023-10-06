@@ -91,3 +91,14 @@ for(let i = 0; i < doDaiMangMoi ; i++) {
 }
 console.log(arr)
 //k Liệt kê danh sách các số chẵn trong mảng trên
+for(let i = 0; i < doDaiMangMoi; i++) {
+   if(arr[i] > 0 && arr[i] % 2 ==0){
+      console.log('cac phan tu chan :', arr[i])
+   }
+}
+//l. Liệt kê danh sách các số lẽ trong mảng trên
+for(let i = 0; i < doDaiMangMoi; i++) {
+   if(arr[i] > 0 && arr[i] % 2 !=0){
+      console.log('cac phan tu le :', arr[i])
+   }
+}
